@@ -1,6 +1,8 @@
 import os
 import discord
 from discord.ext import commands
+import random
+import json
 
 # Your actual Discord bot token (ensure you keep this secure)
 TOKEN = ''  # Replace this with your actual token
@@ -9,41 +11,48 @@ intents = discord.Intents.default()
 intents.message_content = True  # Enable message content intent
 client = commands.Bot(command_prefix='!', intents=intents)
 
-def read_tasks_from_file():
-    try:
-        with open("tasks.txt", "r") as file:
-            tasks = file.readlines()
-            # Strip newline characters and return a clean list
-            return [task.strip() for task in tasks if task.strip()]
-    except FileNotFoundError:
-        print("tasks.txt not found. Please ensure the file exists.")
-        return []
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return []
-tasks = read_tasks_from_file()
-# Load tasks from the file
+
+
+# Load intents from JSON file
+with open('intents.json', 'r') as json_data:
+    intents = json.load(json_data)
+
+# Initialize the Discord client
+client = discord.Client()
+
+def get_response(msg):
+    """
+    This function handles text responses based on the user's message.
+    It matches the message with patterns from the intents file and returns a response.
+    """
+    msg = msg.lower()  # Convert message to lowercase for case-insensitive matching
+
+    # Loop through each intent
+    for intent in intents['intents']:
+        # Check if the user's message matches any of the patterns for the tag
+        for pattern in intent['patterns']:
+            if pattern.lower() in msg:
+                return random.choice(intent['responses'])
+
+    return "Sorry, I didn't understand that."
+
+# Event when the bot is ready
 @client.event
 async def on_ready():
-    print(f'Logged in as: {client.user}')
+    print(f'We have logged in as {client.user}')
 
+# Event when a message is received
 @client.event
 async def on_message(message):
-    # Only respond to messages from other users, not from the bot itself
+    # Prevent the bot from responding to itself
     if message.author == client.user:
         return
 
-    # Check for the greeting and respond
-    if "hi" in message.content.lower():
-        await message.channel.send("Hi there! Ready to tackle some tasks? 🎉")
-
-    # Check for a command to read tasks
-    if "y" in message.content.lower():
-        if tasks:
-            task_list = "\n".join(f"✨ {task}" for task in tasks)
-            await message.channel.send(f"Here are your tasks for today:\n{task_list}")
-        else:
-            await message.channel.send("You have no tasks on your list! 🎉 Feel free to add some!")
+    # Process the user's message and get the response
+    if message.content.startswith("!"):
+        user_message = message.content[1:]  # Remove the '!' prefix for easy processing
+        bot_response = get_response(user_message)
+        await message.channel.send(bot_response)
 
 # Start the bot
 client.run(TOKEN)
