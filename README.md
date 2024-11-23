@@ -1,2 +1,1 @@
-# CommandingOfficer
-DISCORD BOT IN PYTHON
+#PseudoBot
