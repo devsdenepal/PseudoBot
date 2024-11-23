@@ -13,12 +13,12 @@ import re
 import random
 # Set up logging for debugging and monito
 # Your actual Discord bot token (ensure you keep this secure)
-TOKEN = 'MTMwMzM2ODU4MDA1Nzc5NjYxOA.G5BZE2.gUv9A2EFjMT3KhoOl6rdldBcYKtQMk9K1MbtSc'  # Replace this with your actual token
-SERVER_NAME = 'DevServer'  # Use the actual server name
+TOKEN = ''  # Replace this with your actual token
+SERVER_NAME = 'Server'  # Use the actual server name
 intents = discord.Intents.default()
 intents.message_content = True  # Enable message content intent
 client = commands.Bot(command_prefix='!', intents=intents)
-API_NINJAS_KEY = "u2WUNGAW0Y0VCgkqM7uKaA==f2GmRvZntpTgyhIk"  # Your API Ninjas key
+API_NINJAS_KEY = ""  # Your API Ninjas key
 human = "Dev"
 engine = pyttsx3.init('sapi5')
 # Set properties (optional)
