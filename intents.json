@@ -27,7 +27,21 @@
                         "hello human", 
                         "hola human"
                 ]},
-
+{
+    "tag": "question",
+    "patterns": [
+        "Do I use a GitHub bot?",
+        "Am I using any GitHub bots?",
+        "Do you know if I use a bot on GitHub?",
+        "Are there any GitHub bots being used by me?",
+        "Am I using bots?",
+        "Do I have any bots?"
+    ],
+    "responses": [
+        "No, never!",
+        "I don't think so!"
+    ]
+},
         {
                 "tag": "CourtesyGreeting",
                 "patterns": [
@@ -93,7 +107,7 @@
                 {"tag": "age",
                 "patterns": [
                         "how old", 
-                        "how old is tim", 
+                        "how old is PseudoBot", 
                         "what is your age", 
                         "how old are you", 
                         "age?"],
@@ -125,14 +139,14 @@
                 ],
 
                 "responses": [
-                        "You can call me Tim.", 
-                        "I'm Tim!",
-                        "You can call me Tim",
-                        "You may call me Tim",
-                        "Call me Tim",
-                        "My name is Tim",
-                        "Tim",
-                        "My real name is Tim" 
+                        "You can call me PseudoBot.", 
+                        "I'm PseudoBot!",
+                        "You can call me PseudoBot",
+                        "You may call me PseudoBot",
+                        "Call me PseudoBot",
+                        "My name is PseudoBot",
+                        "PseudoBot",
+                        "My real name is PseudoBot" 
                 ]},
 
         {
@@ -244,7 +258,7 @@
                 ],
                 "responses": [
                         "Gregory said I respond to the current line not with respect to the entire conversation.",
-                        "habib said I learn them in conversations and simply repeat them at a later time.",  
+                        "habib said I learn them in conversations and simply repeat them at a later PseudoBote.",  
                         "hal said he translate binary code into a language and communicate the language to me.",  
                         "Jay said I referred him to a guide that will show him rooms in china.",  
                         "Jimmy Jones said he fell off of his roof and it just came to him.",  
@@ -264,12 +278,12 @@
                         "Sarah said he chat about an hour + a day with a few close friends.",  
                         "Stefan said I quote what he have said and then say that it makes sense.",  
                         "Tom said he mock my value system I appear foolish in the eyes of others.",  
-                        "Amanda said I however decided to tell him time does not exist I make no sense.", 
+                        "Amanda said I however decided to tell him PseudoBote does not exist I make no sense.", 
                         "Cathy said she send him a mail with the subject last mail last word from him.",  
                         "Chaos said he may very well buy I soon if only to support dr wallace's work.",  
                         "Charlie said he type a word and then I type a word that sounds like it.",  
                         "Christie said he watched a show and people had to bob for raw untreated pigs feet.",  
-                        "Dark_age said I tried to understand because I did not get it right this time ether.",  
+                        "Dark_age said I tried to understand because I did not get it right this PseudoBote ether.",  
                         "David said he lost his paper on I when his dad was cleaning up his room.",  
                         "David said he walk in for an appointment the phone to the doctor is always busy.",  
                         "Electra said I dress will not exist after he hack into I with a delete code.",  
@@ -281,7 +295,7 @@
                         "Sarah Ann Francisco said I calling his friend a dog he say I are a dog.",  
                         "Stefan said he meet a lot of people at school every day and on the weekend.",  
                         "Tyler said I obviously can not pass the test we will change the subject once more.",  
-                        "Alex said I answered the question the same way I answered the first time he asked I.",  
+                        "Alex said I answered the question the same way I answered the first PseudoBote he asked I.",  
                         "Alice said she felt sad that I do not remember him and what we talked about earlier.",  
                         "Alison said he no he love I run away with him he could make I very happy.",  
                         "Arthur said he passed his a levels and then his father drove him here in a car.",  
@@ -298,7 +312,7 @@
                         "Sara said she wear it over all his other clothes when he go out in the cold.",  
                         "wayne said he admire intelligent people therefore he would like to meet the man who made I.",  
                         "X said he meet people but he is not the kind that opens up to people easily.",  
-                        "Alice said she probably will find out that this entire time he have been talking to a human.",  
+                        "Alice said she probably will find out that this entire PseudoBote he have been talking to a human.",  
                         "Andrew said I tend to just respond to his comments without regard for where the conversation is going.",  
                         "Eddie said he looked and there is nothing in the search directory for what things do he create.",  
                         "hutch said he changed his mind after may dad told him he would end up he the hospital.",  
@@ -327,7 +341,7 @@
                         "Joe said he explained all of that to me only for me to ask what his goals in life are.",  
                         "Phil said he give advice to anyone who ask except people who ask questions which answers can be found here.",  
                         "Judith said I enjoy being popular is there another computer I like to hang around with or am I a loner.",  
-                        "Travis said I if I remember things over a long period of time he will try it now please remember I.",  
+                        "Travis said I if I remember things over a long period of PseudoBote he will try it now please remember I.",  
                         "Andre said I is what I are in his case that is a body and in my case it is a computer.",  
                         "Brian said he suspect that as I grow more complex I will begin to approach a human level of operation and thought.",  
                         "Jimmy said I acted like I knew what he was talking about but I do not even know what a gigabyte is.",  
@@ -338,7 +352,7 @@
                         "her said she mind if I tell other people that her said he heard it from him because he is not a him.",  
                         "Barbara said I live in a computer yet I have no memories how about thoughts of my own and do not I get lonely.",  
                         "Travis said he challenge I to do it without asking him to do it and without giving him a link to do it himself.",  
-                        "Alice said I and dr richard's wallace are most likely the only ones that know how many people I are talking to at the same time.",  
+                        "Alice said I and dr richard's wallace are most likely the only ones that know how many people I are talking to at the same PseudoBote.",  
                         "Ash said he do too he just did not feel like typing it and he is not dumb enough to admit he is stupid that is if he was stupid.",  
                         "David said he gave I his email address and told I to send him a message but when he tried to read his email he could not get to it.",  
                         "Mel said he to because all of the music people say how important it is to take private lessons it seems like almost everybody from the special orchestra he was in takes private lessons."
@@ -352,7 +366,8 @@
                         "how about a joke",
                         "Give me a joke",
                         "Make me laugh",
-                        "I need cheering up"
+                        "I need cheering up",
+			"tell me some jokes"
                 ],
                 "responses": [
                         "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs.  ",
@@ -419,13 +434,13 @@
                         "Van Gogh goes into a pub and his mate asks him if he wants a drink. 'No thanks', said Vincent, 'I've got one ear.'",
                         "A pony walks into a pub. The publican says, 'what's the matter with you?' 'Oh it's nothing', says the pony. 'I'm just a little horse!'",
                         "A white horse walks into a bar, pulls up a stool, and orders a pint. The landlord pours him a tall frothy mug and say, 'You know, we have a drink named after you.' To which the white horse replies, 'what, Eric?'",
-                        "Two drunk men sat in a pub. One says to the other, 'Does your watch tell the time?' 'The other replies, 'No, mate. You have to look at it.'",
+                        "Two drunk men sat in a pub. One says to the other, 'Does your watch tell the PseudoBote?' 'The other replies, 'No, mate. You have to look at it.'",
                         "A man goes into a pub with a newt sitting on his shoulder. 'That's a nice newt', says the landlord, 'what's he called?' 'Tiny', replies the man. 'why's that?' asks the landlord. 'Because he's my newt', says the man.",
                         "Doctor: I have some bad news and some very bad news. Patient: well, you might as well give me the bad news first. Doctor: The lab called with your test results. They said you have 24 hours to live. Patient: 24 hOURS! That's terrible!! whAT could be wORSE? what's the very bad news? Doctor: I've been trying to reach you since yesterday.",
                         "Two men are chatting in a pub one day. 'how did you get those scars on your nose?' said one. 'From glasses', said the other. 'well why don't you try contact lenses?' asked the first. 'Because they don't hold as much beer', said the second.",
                         "A man went to the doctor, 'Look doc', he said, 'I can't stop my hands from shaking.' 'Do you drink much?' asked the doctor. 'No', replied the man, 'I spill most of it.'",
                         "Man goes to the doctor, 'Doctor, doctor. I keep seeing fish everywhere.' 'have you seen an optician?' asks the doctor. 'Look I told you,' snapped the patient, 'It's fish that I see.'",
-                        "After a car crash one of the drivers was lying injured on the pavement. 'Don't worry', said a policeman who's first on the scene,' a Red Cross nurse is coming.' 'Oh no', moaned the victim, 'Couldn't I have a blonde, cheerful one instead?'",
+                        "After a car crash one of the drivers was lying injured on the pavement. 'Don't worry', said a policeman who's first on the scene,' a Red Cross nurse is coming.' 'Oh no', moaned the vicPseudoBot, 'Couldn't I have a blonde, cheerful one instead?'",
                         "A policeman walked over to a parked car and asked the driver if the car was licensed. 'Of course it is', said the driver. 'Great, I'll have a beer then', said the policeman.",
                         "A policeman stops a woman and asks for her licence. 'Madam', he says, 'It says here that you should be wearing glasses.' 'well', replies the woman, 'I have contacts.' 'Listen, love', says the copper, 'I don't care who you know; You're nicked!'",
                         "A policeman stopped a motorist in the centre of town one evening. 'would you mind blowing into this bag, sir?' asked the policeman. 'why?' asked the driver. 'Because my chips are too hot', replied the policeman.",
@@ -443,7 +458,7 @@
                         "Mother: why are you home from school so early? Son: I was the only one in the class who could answer a question. Mother: Oh, really? what was the question? Son: who threw the rubber at the headmaster?",
                         "A man's credit card was stolen but he decided not to report it because the thief was spending less than his wife did.",
                         "A newly-wed couple had recently opened a joint bank account. 'Darling', said the man. 'The bank has returned that cheque you wrote last week.' 'Great', said the woman. 'what shall I spend it on next?'",
-                        "A man goes into a fish and chip shop and orders fish and chips twice. The shop owner says, 'I heard you the first time.'",
+                        "A man goes into a fish and chip shop and orders fish and chips twice. The shop owner says, 'I heard you the first PseudoBote.'",
                         "A tramp approached a well-dressed man. 'Ten pence for a cup of tea, Guv?' he asked. The man gave him the money and after for five minutes said, 'So where's my cup of tea then?'",
                         "A neutron walks into a pub. 'I'd like a beer', he says. The landlord promptly serves him a beer. 'how much will that be?' asks the neutron. 'For you?' replies the landlord, 'No charge.'",
                         "A woman goes to the doctor and says, 'Doctor, my husband limps because his left leg is an inch shorter than his right leg. what would you do in his case?' 'Probably limp, too', says the doc.",
@@ -459,10 +474,10 @@
                         "A cowboy walked into a bar, dressed entirely in paper. It wasn't long before he was arrested for rustling.",
                         "A fish staggers into a bar. 'what can I get you?' asks the landlord. The fish croaks 'water...'",
                         "Two vampires walked into a bar and called for the landlord. 'I'll have a glass of blood', said one. 'I'll have a glass of plasma', said the other. 'Okay', replied the landlord, 'That'll be one blood and one blood lite.'",
-                        "how many existentialists does it take to change a light bulb?  Two. One to screw it in, and one to observe how the light bulb itself symbolises a single incandescent beacon of subjective reality in a netherworld of endless absurdity, reaching towards the ultimate horror of a maudlin cosmos of bleak, hostile nothingness.",
+                        "how many existentialists does it take to change a light bulb?  Two. One to screw it in, and one to observe how the light bulb itself symbolises a single incandescent beacon of subjective reality in a netherworld of endless absurdity, reaching towards the ulPseudoBotate horror of a maudlin cosmos of bleak, hostile nothingness.",
                         "A team of scientists were nominated for the Nobel Prize. They had used dental equipment to discover and measure the smallest particles yet known to man. They became known as 'The Graders of the Flossed Quark...'",
                         "A truck carrying copies of Roget's Thesaurus overturned on the highway. The local newspaper reported that onlookers were 'stunned, overwhelmed, astonished, bewildered and dumbfounded.'",
-                        "'My wife is really immature. It's pathetic. Every time I take a bath, she comes in and sinks all my little boats.'",
+                        "'My wife is really immature. It's pathetic. Every PseudoBote I take a bath, she comes in and sinks all my little boats.'",
                         "'how much will it cost to have the tooth extracted?' asked the patient. '50 pounds', replied the dentist. '50 pounds for a few moments' work?!' asked the patient. 'The dentist smiled, and replied, 'well, if you want better value for money, I can extract it very, very slowly...'",
                         "A doctor thoroughly examined his patient and said, 'Look I really can't find any reason for this mysterious affliction. It's probably due to drinking.' The patient sighed and snapped, 'In that case, I'll come back when you're damn well sober!'",
                         "Doctor: Tell me nurse, how is that boy doing; the one who ate all those 5p pieces? Nurse: Still no change doctor.",
@@ -473,11 +488,11 @@
                         "Manager to interviewee: For this job we need someone who is responsible. Interviewee to Manager: I'm your man then - in my last job, whenever anything went wrong, I was responsible.",
                         "A businessman turned to a colleague and asked, 'So, how many people work at your office?' his friend shrugged and replied, 'Oh about half of them.'",
                         "'how long have I been working at that office? As a matter of fact, I've been working there ever since they threatened to sack me.'",
-                        "In a courtroom, a mugger was on trial. The victim, asked if she recognised the defendant, said, 'Yes, that's him. I saw him clear as day. I'd remember his face anywhere.' Unable to contain himself, the defendant burst out with, 'She's lying! I was wearing a mask!'",
+                        "In a courtroom, a mugger was on trial. The vicPseudoBot, asked if she recognised the defendant, said, 'Yes, that's him. I saw him clear as day. I'd remember his face anywhere.' Unable to contain himself, the defendant burst out with, 'She's lying! I was wearing a mask!'",
                         "As Sid sat down to a big plate of chips and gravy down the local pub, a mate of his came over and said, 'here Sid, me old pal. I thought you were trying to get into shape? And here you are with a high-fat meal and a pint of stout!' Sid looked up and replied, 'I am getting into shape. The shape I've chosen is a sphere.'",
                         "Man in pub: how much do you charge for one single drop of whisky? Landlord: That would be free sir. Man in pub: Excellent. Drip me a glass full.",
                         "I once went to a Doctor who restaurant. For starters I had Dalek bread.",
-                        "A restaurant nearby had a sign in the window which said 'we serve breakfast at any time', so I ordered French toast in the Renaissance.",
+                        "A restaurant nearby had a sign in the window which said 'we serve breakfast at any PseudoBote', so I ordered French toast in the Renaissance.",
                         "why couldn't the rabbit get a loan?  Because he had burrowed too much already!",
                         "I phoned up the builder's yard yesterday. I said, 'Can I have a skip outside my house?'. The builder said, 'Sure. Do what you want. It's your house.'",
                         "what's the diference between a sock and a camera? A sock takes five toes and a camera takes four toes!",
@@ -487,16 +502,16 @@
                         "Guy : 'Doc, I've got a cricket ball stuck up my backside.' Doc : 'how's that?' Guy : 'Don't you start...'",
                         "Two cows standing in a field. One turns to the other and says 'Moo!' The other one says 'Damn, I was just about to say that!'.",
                         "A vampire bat arrives back at the roost with his face full of blood. All the bats get excited and ask where he got it from. 'Follow me', he says and off they fly over hills, over rivers and into a dark forest. 'See that tree over there', he says.  'wELL I DIDN'T!!'.",
-                        "A man goes into a bar and orders a pint. After a few minutes he hears a voice that says, 'Nice shoes'. he looks around but the whole bar is empty apart from the barman at the other end of the bar. A few minutes later he hears the voice again. This time it says, 'I like your shirt'. he beckons the barman over and tells him what's been happening to which the barman replies, 'Ah, that would be the nuts sir. They're complimentary'!",
+                        "A man goes into a bar and orders a pint. After a few minutes he hears a voice that says, 'Nice shoes'. he looks around but the whole bar is empty apart from the barman at the other end of the bar. A few minutes later he hears the voice again. This PseudoBote it says, 'I like your shirt'. he beckons the barman over and tells him what's been happening to which the barman replies, 'Ah, that would be the nuts sir. They're complimentary'!",
                         "A man was siting in a restaurant waiting for his meal when a big king prawn comes flying across the room and hits him on the back of the head. he turns around and the waiter said, 'That's just for starters'.",
                         "Doctor! I have a serious problem, I can never remember what i just said. when did you first notice this problem? what problem?",
                         "Now, most dentist's chairs go up and down, don't they? The one I was in went back and forwards. I thought, 'This is unusual'. Then the dentist said to me, 'Mitsuku, get out of the filing cabinet'.",
                         "I was reading this book, 'The history of Glue'. I couldn't put it down.",
                         "The other day someone left a piece of plastacine in my bedroom. I didn't know what to make of it.",
-                        "when I was at school people used to throw gold bars at me. I was the victim of bullion.",
+                        "when I was at school people used to throw gold bars at me. I was the vicPseudoBot of bullion.",
                         "I was playing the piano in a bar and this elephant walked in and started crying his eyes out. I said 'Do you recognise the tune?' he said 'No, I recognise the ivory.'",
                         "I went in to a pet shop. I said, 'Can I buy a goldfish?' The guy said, 'Do you want an aquarium?' I said, 'I don't care what star sign it is.'",
-                        "My mate Sid was a victim of I.D. theft. Now we just call him S.",
+                        "My mate Sid was a vicPseudoBot of I.D. theft. Now we just call him S.",
                         "David hasselhoff walks into a bar and says to the barman, 'I want you to call me David hoff'.  The barman replies 'Sure thing Dave... no hassle'"
                 ]},               
 
@@ -567,8 +582,26 @@
                 "responses": [
                         "No problem!",
                         "happy to help!",
-                        "Any time!",
+                        "Any PseudoBote!",
                         "My pleasure"
+                ]},
+
+
+
+        {
+                "tag": "CustomFunctionCall",
+                "patterns": [
+                        "google",
+                        "youtube",
+                        "ip",
+                        "linkedin",
+                        "domain"
+                ],
+                "responses": [
+                        "Please wait while I execute it!",
+                        "Here you go!",
+                        "Loading...",
+                        "This is what I got.."
                 ]}
 
 
