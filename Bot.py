@@ -1,47 +1,42 @@
 import os
+import json
+import random
 import discord
 from discord.ext import commands
-import random
-import json
 
-# Your actual Discord bot token (ensure you keep this secure)
-TOKEN = ''  # Replace this with your actual token
-SERVER_NAME = ''  # Use the actual server name
+TOKEN = os.environ.get("DISCORD_TOKEN", "")  # Set via environment variable
+SERVER_NAME = os.environ.get("SERVER_NAME", "")  # Use the actual server name
+
 intents = discord.Intents.default()
 intents.message_content = True  # Enable message content intent
-client = commands.Bot(command_prefix='!', intents=intents)
+client = commands.Bot(command_prefix="!", intents=intents)
 
 
+def load_intents(path="intents.json"):
+    with open(path, "r", encoding="utf-8") as json_data:
+        return json.load(json_data)
 
-# Load intents from JSON file
-with open('intents.json', 'r') as json_data:
-    intents = json.load(json_data)
 
-# Initialize the Discord client
-client = discord.Client()
+intents_data = load_intents()
+
 
 def get_response(msg):
-    """
-    This function handles text responses based on the user's message.
-    It matches the message with patterns from the intents file and returns a response.
-    """
+    """Match a message against the intents file and return a response."""
     msg = msg.lower()  # Convert message to lowercase for case-insensitive matching
 
-    # Loop through each intent
-    for intent in intents['intents']:
-        # Check if the user's message matches any of the patterns for the tag
-        for pattern in intent['patterns']:
+    for intent in intents_data["intents"]:
+        for pattern in intent["patterns"]:
             if pattern.lower() in msg:
-                return random.choice(intent['responses'])
+                return random.choice(intent["responses"])
 
     return "Sorry, I didn't understand that."
 
-# Event when the bot is ready
+
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    print(f"We have logged in as {client.user}")
 
-# Event when a message is received
+
 @client.event
 async def on_message(message):
     # Prevent the bot from responding to itself
@@ -54,5 +49,8 @@ async def on_message(message):
         bot_response = get_response(user_message)
         await message.channel.send(bot_response)
 
-# Start the bot
-client.run(TOKEN)
+
+if __name__ == "__main__":
+    if not TOKEN:
+        raise SystemExit("DISCORD_TOKEN is not set. Create a .env file or export the variable.")
+    client.run(TOKEN)
